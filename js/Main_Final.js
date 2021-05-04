@@ -2,8 +2,8 @@
 Leaflet Configuration
 ===================== */
 var map = L.map('map', {
-  center: [40.000, -75.1090],
-  zoom: 11
+  center: [39.945389, -75.165166],
+  zoom: 16
 });
 var Stamen_TonerLite = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
   attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
@@ -13,12 +13,24 @@ var Stamen_TonerLite = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{
   ext: 'png'
 }).addTo(map);
 
+$( "#map" ).hide()
+$("#returnDoor").hide()
+$( ".pagination" ).hide()
+$(".page1").hide()
+$(".page2").hide()
+$(".page3").hide()
+$(".page4").hide()
+$(".page5").hide()
+$(".page6").hide()
+$(".page7").hide()
+
 //function to enter house
 var hidehouse = function(){
   $( ".house" ).hide()
   $(".door").hide()
   $(".page1").show()
   $(".page2").hide()
+  $( ".pagination" ).show()
 }
 
 //page 1 elements
@@ -30,6 +42,9 @@ var page1 = function(){
   $(".page5").hide()
   $(".page6").hide()
   $(".page7").hide()
+  $( "#map" ).hide()
+  $( "#returnDoor" ).hide()
+  $( ".pagination" ).show()
 }
 
 //page 2 elements
@@ -41,13 +56,167 @@ var page2 = function(){
   $(".page5").hide()
   $(".page6").hide()
   $(".page7").hide()
+  $( "#returnDoor" ).hide()
+  $( ".pagination" ).show()
+}
+
+//page 3 elements
+var page3 = function(){
+  $(".page2").hide()
+  $(".page1").hide()
+  $(".page3").show()
+  $(".page4").hide()
+  $(".page5").hide()
+  $(".page6").hide()
+  $(".page7").hide()
+  $( "#returnDoor" ).hide()
+  $( ".pagination" ).show()
+}
+
+//page 4 elements
+var page4 = function(){
+  $(".page2").hide()
+  $(".page1").hide()
+  $(".page3").hide()
+  $(".page4").show()
+  $(".page5").hide()
+  $(".page6").hide()
+  $(".page7").hide()
+  $( "#returnDoor" ).hide()
+  $( ".pagination" ).show()
+}
+
+//page 5 elements
+var page5 = function(){
+  $(".page2").hide()
+  $(".page1").hide()
+  $(".page3").hide()
+  $(".page4").hide()
+  $(".page5").show()
+  $(".page6").hide()
+  $(".page7").hide()
+  $( "#returnDoor" ).hide()
+  $( ".pagination" ).show()
+}
+
+//page 6 elements
+var page6 = function(){
+  $(".page2").hide()
+  $(".page1").hide()
+  $(".page3").hide()
+  $(".page4").hide()
+  $(".page5").hide()
+  $(".page6").show()
+  $(".page7").hide()
+  $( "#returnDoor" ).hide()
+  $( ".pagination" ).show()
+}
+
+//page 7 elements
+var page7 = function(){
+  $(".page2").hide()
+  $(".page1").hide()
+  $(".page3").hide()
+  $(".page4").hide()
+  $(".page5").hide()
+  $(".page6").hide()
+  $(".page7").show()
+  $( "#returnDoor" ).hide()
+  $( ".pagination" ).show()
 }
 
 //people popup
-var factsPopUp =function() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
+var factsPopUp1a =function() {
+  var popup = document.getElementById("myPopup1a");
+  popup.classList.toggle("show")
+  console.log("Hello");
 }
+
+var factsPopUp1b =function() {
+  var popup = document.getElementById("myPopup1b");
+  popup.classList.toggle("show")
+  console.log("Hello");
+}
+
+var factsPopUp1c =function() {
+  var popup = document.getElementById("myPopup1c");
+  popup.classList.toggle("show")
+  console.log("Hello");
+}
+
+
+var factsPopUp1d =function() {
+  var popup = document.getElementById("myPopup1d");
+  popup.classList.toggle("show")
+  console.log("Hello");
+}
+
+var factsPopUp1e =function() {
+  var popup = document.getElementById("myPopup1e");
+  popup.classList.toggle("show")
+  console.log("Hello");
+}
+
+var factsPopUp2a =function() {
+  var popup = document.getElementById("myPopup2a");
+  popup.classList.toggle("show")
+  console.log("Hello");
+}
+
+var factsPopUp2b =function() {
+  var popup = document.getElementById("myPopup2b");
+  popup.classList.toggle("show")
+  console.log("Hello");
+}
+
+var factsPopUp2c =function() {
+  var popup = document.getElementById("myPopup2c");
+  popup.classList.toggle("show")
+  console.log("Hello");
+}
+
+var factsPopUp2d =function() {
+  var popup = document.getElementById("myPopup2d");
+  popup.classList.toggle("show")
+  console.log("Hello");
+}
+
+var factsPopUp3a =function() {
+  var popup = document.getElementById("myPopup3a");
+  popup.classList.toggle("show")
+  console.log("Hello");
+}
+
+var factsPopUp4a =function() {
+  var popup = document.getElementById("myPopup4a");
+  popup.classList.toggle("show")
+  console.log("Hello");
+}
+
+var factsPopUp4b =function() {
+  var popup = document.getElementById("myPopup4b");
+  popup.classList.toggle("show")
+  console.log("Hello");
+}
+
+var factsPopUp4c =function() {
+  var popup = document.getElementById("myPopup4c");
+  popup.classList.toggle("show")
+  console.log("Hello");
+}
+
+var factsPopUp4d =function() {
+  var popup = document.getElementById("myPopup4d");
+  popup.classList.toggle("show")
+  console.log("Hello");
+}
+
+var factsPopUp4e =function() {
+  var popup = document.getElementById("myPopup4e");
+  popup.classList.toggle("show")
+  console.log("Hello");
+}
+
 
 //map function
 var mapOpen = function() {
@@ -60,9 +229,26 @@ var mapOpen = function() {
   $(".page7").hide()
   $(".pagination").hide()
   $( "#map" ).show()
+  $("#returnDoor").show()
+  
+//39.941579514468785,-75.15235304832458
+//39.94168439324544,-75.18299996852873
+//39.9500166010947,-75.15238523483276
+  var imageUrl = "images/webdubois2.png"
+    imageBounds = [[ 39.94986855492455,-75.15249252319336], [39.94157231689977,-75.15235271304846], [39.94164532077879,-75.18300801515579],[39.949767801097735, -75.18298119306564
+      ]];
+  L.imageOverlay(imageUrl, imageBounds,{opacity: 0.4}).addTo(map);
+  markers= L.marker([39.94347656161361,-75.15382155776024]).bindPopup("424 S 7th St")
+  markers.addTo(map)
 }
 
 
 $(".door").click(hidehouse)
 
 $("#door1").click(mapOpen)
+
+
+
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();   
+});

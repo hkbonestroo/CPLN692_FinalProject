@@ -9,6 +9,7 @@
 	$(document).ready(function(){
 		$("#myModal").modal('show');
 	});
+
 </script>
 <html>
   <head>
@@ -22,53 +23,179 @@
   </head>
   <body>
 
+
     <!-- modal -->
     <div id="myModal" class="modal fade">
       <div class="modal-dialog">
           <div class="modal-content">
               <div class="modal-header">
-                  <h5 class="modal-title">Subscribe our Newsletter</h5>
+                  <h5 class="modal-title w-100 text-center">Welcome to 424 S 7th Street!</h5>
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
               </div>
-              <div class="modal-body">
+              <div class="modal-body w-100 text-center">
+                  <img src="images/house.jpg"  width="352" height="427"> </div>
+              <div class="modal-body">  
                   <p>Subscribe to our mailing list to get the latest updates straight in your inbox.</p>
               </div>
           </div>
       </div>
   </div>
   
- 
-  <!-- Door-->
-    <div class="door">
-      <img src="images/door.jpg"  width="60"
-         height="80">
-    </div>
-
+<div id="container1">
   <!-- House1-->
   <div class="house">
-    <img src="images/house1.jpg"  width="600"
-       height="800">
+    <img src="images/house1.png"  width="390"
+       height="636">
+         <!-- Door-->
+    <div class="door">
+      <span class="tooltiptext">Come on in!</span>
+      <img src="images/door.png"  width="96"
+         height="186">
+    </div>
   </div>
+</div>
+
   <!-- House1-->
+  <div id="container2">
   <div class="page1">
-    <div id="page1popup" onclick = "factsPopUp()">
-      <span class ="popuptext" id="myPopup">A Simple popup!</span>
-      <img src="images/family1a.png"  width="60"
-        height="80">
-      <img src="images/family1b.png"  width="60"
-        height="80">  </div>
+    <div id="interior1">
+      <img src="images/interior.png"  width="1008"
+      height="720"> 
+      <div class="sidebar">
+        <div id="intro">
+          <h3>Welcome to our home! 1880</h3>
+          <p class="main">Learning from the New York program, the Pittsburgh pilot would be targeted to address areas of high-need. Based on its lack of close access to a grocery store, the pilot would be located in Northerm Garfield. Should the pilot prove successful, it could be scaled up within the study area and to other neighborhoods in Pittsburgh.
+            This proposal is also relatively low-cost and could be deployed quickly in approximately one to three years. Most expenses would be administrative, but other costs incurred may result from subsidizing vendors, and creating a new system of licensing and enforcement.
+            .Learning from the New York program, the Pittsburgh pilot would be targeted to address areas of high-need. Based on its lack of close access to a grocery store, the pilot would be located in Northerm Garfield. Should the pilot prove successful, it could be scaled up within the study area and to other neighborhoods in Pittsburgh.
+            This proposal is also relatively low-cost and could be deployed quickly in approximately one to three years. Most expenses would be administrative, but other costs incurred may result from subsidizing vendors, and creating a new system of licensing and enforcement.
+            </p></div></div>
+    <div id="fam1a" onclick = "factsPopUp1a()">
+      <span class ="popuptext1a" id="myPopup1a">A Simple popup!</span>
+      <img src="images/family1a.png"  width="167"
+        height="327" >
+       </div>
+    <div id="fam1b" onclick = "factsPopUp1b()">
+        <span class ="popuptext1b" id="myPopup1b">A Simple popup!</span>
+        <img src="images/family1b.png"  width="180.9"
+          height="320" >
+       </div>
+    <div id="fam1c" onclick = "factsPopUp1c()">
+        <span class ="popuptext1c" id="myPopup1c">A Simple popup!</span>
+        <img src="images/family1c.png"  width="160"
+          height="287" >
+       </div>
+    <div id="fam1d" onclick = "factsPopUp1d()">
+        <span class ="popuptext1d" id="myPopup1d">A Simple popup!</span>
+        <img src="images/family1d.png"  width="167"
+          height="327" >
+       </div>
+    <div id="fam1e" onclick = "factsPopUp1e()">
+        <span class ="popuptext1e" id="myPopup1e">A Simple popup!</span>
+        <img src="images/family1e.png"  width="180.9"
+          height="320" >
+       </div>
     <div id="door1">
         <img src="images/door1.png"  width="60"
        height="80">  </div>
   </div>
+  </div>
+  </div>
+  
 
-    <!-- House1-->
-    <div class="page2">
-      <img src="images/family2a.png"  width="60"
-         height="80">
-      <img src="images/family2b.png"  width="60"
-         height="80">  
+    <!-- House2-->
+  <div class="page2">
+    <div id="fam2a" onclick = "factsPopUp2a()">
+        <span class ="popuptext2a" id="myPopup2a">A Simple popup!</span>
+        <img src="images/family2a.png"  width="60"
+          height="80" >
+         </div>
+    <div id="fam2b" onclick = "factsPopUp2b()">
+          <span class ="popuptext2b" id="myPopup2b">A Simple popup!</span>
+          <img src="images/family2b.png"  width="60"
+            height="80" >
+           </div>
+    <div id="fam2c" onclick = "factsPopUp2c()">
+            <span class ="popuptext2c" id="myPopup2c">A Simple popup!</span>
+            <img src="images/family2c.png"  width="60"
+              height="80" >
+             </div>
+    <div id="fam2d" onclick = "factsPopUp2d()">
+              <span class ="popuptext2d" id="myPopup2d">A Simple popup!</span>
+              <img src="images/family2d.png"  width="60"
+                height="80" >
+               </div>
+        <div id="interior1">
+          <img src="images/interior.png"  width="800"
+          height="600">  </div>
+  </div>
+
+    <!-- House3-->
+    <div class="page3">
+      <div id="fam3a" onclick = "factsPopUp3a()">
+        <span class ="popuptext3a" id="myPopup3a">A Simple popup!</span>
+        <img src="images/family3a.png"  width="60"
+          height="80" >
+         </div>
     </div>
+
+    <!-- House4-->
+    <div class="page4">
+        <div id="fam4a" onclick = "factsPopUp4a()">
+          <span class ="popuptext4a" id="myPopup4a">A Simple popup!</span>
+          <img src="images/family4a.png"  width="60"
+            height="80" >
+           </div>
+        <div id="fam4b" onclick = "factsPopUp4b()">
+            <span class ="popuptext4b" id="myPopup4b">A Simple popup!</span>
+            <img src="images/family4b.png"  width="60"
+              height="80" >
+           </div>
+        <div id="fam4c" onclick = "factsPopUp4c()">
+            <span class ="popuptext4c" id="myPopup4c">A Simple popup!</span>
+            <img src="images/family4c.png"  width="60"
+              height="80" >
+           </div>
+        <div id="fam4d" onclick = "factsPopUp4d()">
+            <span class ="popuptext4d" id="myPopup4d">A Simple popup!</span>
+            <img src="images/family4d.png"  width="60"
+              height="80" >
+           </div>
+        <div id="fam4e" onclick = "factsPopUp4e()">
+            <span class ="popuptext4e" id="myPopup4e">A Simple popup!</span>
+            <img src="images/family4e.png"  width="60"
+              height="80" >
+           </div>
+    </div>
+
+    <!-- House5-->
+    <div class="page5">
+      <div id="page5popup" onclick = "factsPopUp()">
+        <span class ="popuptext" id="myPopup">A Simple popup!</span>
+        <img src="images/family5a.png"  width="60"
+         height="80">
+        <img src="images/family5b.png"  width="60"
+         height="80">  </div>
+    </div> 
+
+    <!-- House6-->
+    <div class="page6">
+      <div id="page6popup" onclick = "factsPopUp()">
+        <span class ="popuptext" id="myPopup">A Simple popup!</span>
+        <img src="images/family6a.png"  width="60"
+         height="80">
+        <img src="images/family6b.png"  width="60"
+         height="80">  </div>
+    </div> 
+
+    <!-- House7-->
+    <div class="page7">
+      <div id="page7popup" onclick = "factsPopUp()">
+        <span class ="popuptext" id="myPopup">A Simple popup!</span>
+        <img src="images/family7a.png"  width="60"
+         height="80">
+        <img src="images/family7b.png"  width="60"
+         height="80">  </div>
+    </div> 
 
   <!-- pagination --> 
   <div class="pagination">
@@ -76,16 +203,22 @@
        <input type="button" id="first" onclick="nextPage()" value=&laquo; />
         <input type="button" id="next" onclick="page1()" value="1880" />
         <input type="button" id="next" onclick="page2()" value="1900" />
-        <input type="button" id="next" onclick="thirdPage()" value="1920" />
-        <input type="button" id="next" onclick="fourthPage()" value="1940" />
-        <input type="button" id="next" onclick="fifthPage()" value="1960" />
-        <input type="button" id="next" onclick="sixthPage()" value="1980" />
-        <input type="button" id="next" onclick="seventhPage()" value="2021 (Today)" />
+        <input type="button" id="next" onclick="page3()" value="1920" />
+        <input type="button" id="next" onclick="page4()" value="1940" />
+        <input type="button" id="next" onclick="page5()" value="1960" />
+        <input type="button" id="next" onclick="page6()" value="1980" />
+        <input type="button" id="next" onclick="page7()" value="2021 (Today)" />
         <input type="button" id="last" onclick="previousPage()" value=&raquo; />
     </div> </div>
 
   <!-- Map -->
     <div id="map" class="map"></div>
+
+  <!-- Return Door -->  
+  <div id="returnDoor" onclick = "page1()">
+  <img src="images/doorReturn.png"  width="60"
+         height="80"></div>
+
     <!-- Javascript Imports -->
     <script src="js/jquery-2.2.0.js"></script>
     <script src="js/underscore.js"></script>
