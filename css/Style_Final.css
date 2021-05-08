@@ -1,13 +1,146 @@
 
 
+.legend1{
+  position:absolute;
+  z-index:10000;
+  right:25px;
+  bottom:25px;
+}
 
+.legend2{
+  position:absolute;
+  z-index:10000;
+  right:25px;
+  bottom:25px;
+}
+
+.legend3{
+  position:absolute;
+  z-index:10000;
+  right:25px;
+  bottom:25px;
+}
+
+
+.fam{
+  z-index:100000;
+}
 
 #returnDoor{
   position: absolute;
-  bottom:0px;
-  left:600px;
-  z-index: -1;
+  bottom:10px;
+  left:10px;
+  z-index: 10;
   cursor:pointer;
+}
+#returnDoor .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  left: 105%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#returnDoor .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 600%;
+  left: 50%;
+  margin-left: 5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+#returnDoor:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+#returnDoor2{
+  position: absolute;
+  bottom:10px;
+  left:10px;
+  z-index: 10;
+  cursor:pointer;
+}
+#returnDoor2 .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  left: 105%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#returnDoor2 .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 600%;
+  left: 50%;
+  margin-left: 5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+#returnDoor2:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+#returnDoor3{
+  position: absolute;
+  bottom:10px;
+  left:10px;
+  z-index: 10;
+  cursor:pointer;
+}
+#returnDoor3 .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  left: 105%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#returnDoor3 .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 600%;
+  left: 50%;
+  margin-left: 5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+#returnDoor3:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 #map {
@@ -20,7 +153,7 @@
 }
 
 
-#fam1a {
+/* #fam1a {
   position: absolute;
   bottom:0px;
   right:0px;
@@ -30,7 +163,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
+} */
 
 /* The actual popup */
 #fam1a .popuptext1a {
@@ -42,8 +175,8 @@
   border-radius: 6px;
   padding: 8px 0;
   position: absolute;
-  z-index: 1;
-  bottom: 125%;
+  z-index: 14;
+  bottom: 97%;
   left: 50%;
   margin-left: -80px;
 }
@@ -100,17 +233,17 @@
   opacity: 1;
 }
 
-#fam1b {
+/* #fam1b {
   position: absolute;
   bottom:0px;
-  right: 200px;
+  right: 623px;
   display: inline-block;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
+} */
 
 /* The actual popup */
 #fam1b .popuptext1b {
@@ -122,8 +255,8 @@
   border-radius: 6px;
   padding: 8px 0;
   position: absolute;
-  z-index: 1;
-  bottom: 125%;
+  z-index: 14;
+  bottom: 97%;
   left: 50%;
   margin-left: -80px;
 }
@@ -132,6 +265,7 @@
 #fam1b .popuptext1b::after {
   content: "";
   position: absolute;
+  z-index: 14;
   top: 100%;
   left: 50%;
   margin-left: -5px;
@@ -147,7 +281,7 @@
   animation: fadeIn 1s;
 }
 
-#fam1c {
+/* #fam1c {
   position: absolute;
   bottom:0px;
   display: inline-block;
@@ -156,7 +290,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
+} */
 
 /* The actual popup */
 #fam1c .popuptext1c {
@@ -168,8 +302,8 @@
   border-radius: 6px;
   padding: 8px 0;
   position: absolute;
-  z-index: 1;
-  bottom: 125%;
+  z-index: 14;
+  bottom: 100%;
   left: 50%;
   margin-left: -80px;
 }
@@ -178,6 +312,7 @@
 #fam1c .popuptext1c::after {
   content: "";
   position: absolute;
+  z-index: 14;
   top: 100%;
   left: 50%;
   margin-left: -5px;
@@ -193,7 +328,7 @@
   animation: fadeIn 1s;
 }
 
-#fam1d {
+/* #fam1d {
   position: absolute;
   bottom:0px;
   display: inline-block;
@@ -202,7 +337,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
+} */
 
 /* The actual popup */
 #fam1d .popuptext1d {
@@ -214,8 +349,8 @@
   border-radius: 6px;
   padding: 8px 0;
   position: absolute;
-  z-index: 1;
-  bottom: 125%;
+  z-index: 14;
+  bottom: 100%;
   left: 50%;
   margin-left: -80px;
 }
@@ -224,6 +359,7 @@
 #fam1d .popuptext1d::after {
   content: "";
   position: absolute;
+  z-index: 14;
   top: 100%;
   left: 50%;
   margin-left: -5px;
@@ -239,7 +375,7 @@
   animation: fadeIn 1s;
 }
 
-#fam1e {
+/* #fam1e {
   position: absolute;
   bottom:0px;
   display: inline-block;
@@ -248,7 +384,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
+} */
 
 /* The actual popup */
 #fam1e .popuptext1e {
@@ -260,8 +396,8 @@
   border-radius: 6px;
   padding: 8px 0;
   position: absolute;
-  z-index: 1;
-  bottom: 125%;
+  z-index: 14;
+  bottom: 100%;
   left: 50%;
   margin-left: -80px;
 }
@@ -270,6 +406,7 @@
 #fam1e .popuptext1e::after {
   content: "";
   position: absolute;
+  z-index: 14;
   top: 100%;
   left: 50%;
   margin-left: -5px;
@@ -287,7 +424,7 @@
 /* Toggle this class - hide and show the popup */
 
 
-#fam2a {
+/* #fam2a {
   position: absolute;
   bottom:0px;
   display: inline-block;
@@ -296,7 +433,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
+} */
 
 /* The actual popup */
 #fam2a .popuptext2a {
@@ -308,8 +445,8 @@
   border-radius: 6px;
   padding: 8px 0;
   position: absolute;
-  z-index: 1;
-  bottom: 125%;
+  z-index: 14;
+  bottom: 100%;
   left: 50%;
   margin-left: -80px;
 }
@@ -318,6 +455,7 @@
 #fam2a .popuptext2a::after {
   content: "";
   position: absolute;
+  z-index: 14;
   top: 100%;
   left: 50%;
   margin-left: -5px;
@@ -327,13 +465,13 @@
 }
 
 /* Toggle this class - hide and show the popup */
-#fam2b .show {
+#fam2a .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
 
-#fam2b {
+/* #fam2b {
   position: absolute;
   bottom:0px;
   display: inline-block;
@@ -342,7 +480,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
+} */
 
 /* The actual popup */
 #fam2b .popuptext2b {
@@ -354,8 +492,8 @@
   border-radius: 6px;
   padding: 8px 0;
   position: absolute;
-  z-index: 1;
-  bottom: 125%;
+  z-index: 14;
+  bottom: 100%;
   left: 50%;
   margin-left: -80px;
 }
@@ -364,6 +502,7 @@
 #fam2b .popuptext2b::after {
   content: "";
   position: absolute;
+  z-index: 14;
   top: 100%;
   left: 50%;
   margin-left: -5px;
@@ -379,7 +518,7 @@
   animation: fadeIn 1s;
 }
 
-#fam2c {
+/* #fam2c {
   position: absolute;
   bottom:0px;
   display: inline-block;
@@ -388,7 +527,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
+} */
 
 /* The actual popup */
 #fam2c .popuptext2c {
@@ -400,8 +539,8 @@
   border-radius: 6px;
   padding: 8px 0;
   position: absolute;
-  z-index: 1;
-  bottom: 125%;
+  z-index: 14;
+  bottom: 100%;
   left: 50%;
   margin-left: -80px;
 }
@@ -410,6 +549,7 @@
 #fam2c .popuptext2c::after {
   content: "";
   position: absolute;
+  z-index: 14;
   top: 100%;
   left: 50%;
   margin-left: -5px;
@@ -425,7 +565,7 @@
   animation: fadeIn 1s;
 }
 
-#fam2d {
+/* #fam2d {
   position: absolute;
   bottom:0px;
   display: inline-block;
@@ -434,7 +574,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
+} */
 
 /* The actual popup */
 #fam2d .popuptext2d {
@@ -446,8 +586,8 @@
   border-radius: 6px;
   padding: 8px 0;
   position: absolute;
-  z-index: 1;
-  bottom: 125%;
+  z-index: 14;
+  bottom: 97%;
   left: 50%;
   margin-left: -80px;
 }
@@ -456,6 +596,7 @@
 #fam2d .popuptext2d::after {
   content: "";
   position: absolute;
+  z-index: 14;
   top: 100%;
   left: 50%;
   margin-left: -5px;
@@ -471,7 +612,7 @@
   animation: fadeIn 1s;
 }
 
-#fam3a {
+/* #fam3a {
   position: absolute;
   bottom:0px;
   display: inline-block;
@@ -480,7 +621,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
+} */
 
 /* The actual popup */
 #fam3a .popuptext3a {
@@ -492,8 +633,8 @@
   border-radius: 6px;
   padding: 8px 0;
   position: absolute;
-  z-index: 1;
-  bottom: 125%;
+  z-index: 14;
+  bottom: 100%;
   left: 50%;
   margin-left: -80px;
 }
@@ -502,6 +643,7 @@
 #fam3a .popuptext3a::after {
   content: "";
   position: absolute;
+  z-index: 14;
   top: 100%;
   left: 50%;
   margin-left: -5px;
@@ -518,7 +660,7 @@
 }
 
 
-#fam4a {
+/* #fam4a {
   position: absolute;
   bottom:0px;
   display: inline-block;
@@ -527,7 +669,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
+} */
 
 /* The actual popup */
 #fam4a .popuptext4a {
@@ -539,8 +681,8 @@
   border-radius: 6px;
   padding: 8px 0;
   position: absolute;
-  z-index: 1;
-  bottom: 125%;
+  z-index: 14;
+  bottom: 97%;
   left: 50%;
   margin-left: -80px;
 }
@@ -549,6 +691,7 @@
 #fam4a .popuptext4a::after {
   content: "";
   position: absolute;
+  z-index: 14;
   top: 100%;
   left: 50%;
   margin-left: -5px;
@@ -565,7 +708,7 @@
 }
 
 
-#fam4b {
+/* #fam4b {
   position: absolute;
   bottom:0px;
   display: inline-block;
@@ -574,7 +717,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
+} */
 
 /* The actual popup */
 #fam4b .popuptext4b {
@@ -586,8 +729,8 @@
   border-radius: 6px;
   padding: 8px 0;
   position: absolute;
-  z-index: 1;
-  bottom: 125%;
+  z-index: 14;
+  bottom: 100%;
   left: 50%;
   margin-left: -80px;
 }
@@ -596,6 +739,7 @@
 #fam4b .popuptext4b::after {
   content: "";
   position: absolute;
+  z-index: 14;
   top: 100%;
   left: 50%;
   margin-left: -5px;
@@ -611,7 +755,7 @@
   animation: fadeIn 1s;
 }
 
-#fam4c {
+/* #fam4c {
   position: absolute;
   bottom:0px;
   display: inline-block;
@@ -620,7 +764,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
+} */
 
 /* The actual popup */
 #fam4c .popuptext4c {
@@ -632,8 +776,8 @@
   border-radius: 6px;
   padding: 8px 0;
   position: absolute;
-  z-index: 1;
-  bottom: 125%;
+  z-index: 14;
+  bottom: 97%;
   left: 50%;
   margin-left: -80px;
 }
@@ -642,6 +786,7 @@
 #fam4c .popuptext4c::after {
   content: "";
   position: absolute;
+  z-index: 14;
   top: 100%;
   left: 50%;
   margin-left: -5px;
@@ -657,7 +802,7 @@
   animation: fadeIn 1s;
 }
 
-#fam4d {
+/* #fam4d {
   position: absolute;
   bottom:0px;
   display: inline-block;
@@ -666,7 +811,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
+} */
 
 /* The actual popup */
 #fam4d .popuptext4d {
@@ -678,8 +823,8 @@
   border-radius: 6px;
   padding: 8px 0;
   position: absolute;
-  z-index: 1;
-  bottom: 125%;
+  z-index: 14;
+  bottom: 100%;
   left: 50%;
   margin-left: -80px;
 }
@@ -688,6 +833,7 @@
 #fam4d .popuptext4d::after {
   content: "";
   position: absolute;
+  z-index: 14;
   top: 100%;
   left: 50%;
   margin-left: -5px;
@@ -704,7 +850,7 @@
 }
 
 
-#fam4e {
+/* #fam4e {
   position: absolute;
   bottom:0px;
   display: inline-block;
@@ -713,7 +859,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
+} */
 
 /* The actual popup */
 #fam4e .popuptext4e {
@@ -725,8 +871,8 @@
   border-radius: 6px;
   padding: 8px 0;
   position: absolute;
-  z-index: 1;
-  bottom: 125%;
+  z-index: 14;
+  bottom: 100%;
   left: 50%;
   margin-left: -80px;
 }
@@ -735,6 +881,7 @@
 #fam4e .popuptext4e::after {
   content: "";
   position: absolute;
+  z-index: 14;
   top: 100%;
   left: 50%;
   margin-left: -5px;
@@ -750,13 +897,268 @@
   animation: fadeIn 1s;
 }
 
-#door1{
+/* The actual popup */
+#fam5a .popuptext5a {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 14;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+#fam5a .popuptext5a::after {
+  content: "";
+  position: absolute;
+  z-index: 14;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+#fam5a .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+
+/* #fam4b {
   position: absolute;
   bottom:0px;
-  left:600px;
-  z-index: -4;
-  cursor:pointer;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+} */
+
+/* The actual popup */
+#fam5b .popuptext5b {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 14;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -80px;
 }
+
+/* Popup arrow */
+#fam5b .popuptext5b::after {
+  content: "";
+  position: absolute;
+  z-index: 14;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+#fam5b .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* #fam4c {
+  position: absolute;
+  bottom:0px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+} */
+
+/* The actual popup */
+#fam5c .popuptext5c {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 14;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+#fam5c .popuptext5c::after {
+  content: "";
+  position: absolute;
+  z-index: 14;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+#fam5c .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* #fam4d {
+  position: absolute;
+  bottom:0px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+} */
+
+/* The actual popup */
+#fam5d .popuptext5d {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 14;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+#fam5d .popuptext5d::after {
+  content: "";
+  position: absolute;
+  z-index: 14;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+#fam5d .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* The actual popup */
+#fam6a .popuptext6a {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 14;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+#fam6a .popuptext6a::after {
+  content: "";
+  position: absolute;
+  z-index: 14;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+#fam6a .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+
+/* #fam4b {
+  position: absolute;
+  bottom:0px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+} */
+
+/* The actual popup */
+#fam6b .popuptext6b {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 14;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+#fam6b .popuptext6b::after {
+  content: "";
+  position: absolute;
+  z-index: 14;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+#fam6b .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
 
 #container1 {
   position: relative;
@@ -785,7 +1187,7 @@
   position: fixed;
   padding: 2em;
   left: 50%;
-  top: 90%;
+  top: 94%;
   transform: translate(-50%, -50%);
 }
 
@@ -795,6 +1197,25 @@
 }
 
 #container2 {
+  position: relative;
+}
+
+#container3 {
+  position: relative;
+}
+
+#container4 {
+  position: relative;
+}
+
+#container5 {
+  position: relative;
+}
+
+#container6 {
+  position: relative;
+}
+#container7 {
   position: relative;
 }
 
@@ -816,33 +1237,350 @@
 #fam1b {
   position: fixed;
   bottom:35px;
-  right:441px;
+  right:626px;
   cursor: pointer;
 }
 #fam1c {
   position: fixed;
   bottom:30px;
-  right:306px;
+  right:443px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
 }
 #fam1e {
   position: fixed;
   bottom:30px;
-  right:204px;
+  right:277px;
   cursor: pointer;
+  z-index: 1;
 }
-
-
 
 #fam1d {
   position: fixed;
   bottom:44px;
-  right:113px;
+  right:130px;
   cursor: pointer;
 }
 
 .sidebar {
+  position: fixed;
+  background: rgba(128, 128,128, 0.3);
+  padding:12px;
+  width:400px;
+  height: 200px;
+  top:50px;
+  right:50px;
+  overflow-y:scroll;
+  z-index: 2;
+}
+
+.doorframe {
+  position: fixed;
+  padding:12px;
+  width:400px;
+  height: 200px;
+  top:50px;
+  left:50px;
+  z-index: 3;
+}
+
+#door1{
+  position: fixed;
+  top:35px;
+  left:35px;
+  z-index: 6;
+  cursor:pointer;
+}
+
+#door1 .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  left: 105%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#door1 .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 600%;
+  left: 50%;
+  margin-left: 5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+#door1:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+#door2{
+  position: fixed;
+  top:35px;
+  left:35px;
+  z-index: 6;
+  cursor:pointer;
+}
+
+#door2 .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  left: 105%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#door2 .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 600%;
+  left: 50%;
+  margin-left: 5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+#door2:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+#door3{
+  position: fixed;
+  top:35px;
+  left:35px;
+  z-index: 6;
+  cursor:pointer;
+}
+
+#door3 .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  left: 105%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#door3 .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 600%;
+  left: 50%;
+  margin-left: 5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+#door3:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.sidebarmap {
+  position: fixed;
+  background: rgba(128, 128,128, 0.3);
+  padding:12px;
+  width:400px;
+  height: 200px;
+  top:10px;
+  right:10px;
+  overflow-y:scroll;
+  z-index: 2;
+}
+
+.sidebar2 {
+  position: fixed;
+  background: rgba(128, 128,128, 0.3);
+  padding:12px;
+  width:400px;
+  height: 200px;
+  top:50px;
+  right:50px;
+  overflow-y:scroll;
+  z-index: 2;
+}
+
+#fam2a {
+  position: fixed;
+  bottom:48px;
+  left:411px;
+  cursor: pointer;
+  z-index:1;
+}
+
+#fam2b {
+  position: fixed;
+  bottom:35px;
+  right:676px;
+  cursor: pointer;
+  z-index:1;
+}
+#fam2c {
+  position: fixed;
+  bottom:45px;
+  right:584px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#fam2d {
+  position: fixed;
+  bottom:59px;
+  right:170px;
+  cursor: pointer;
+}
+
+#fam3a {
+  position: fixed;
+  bottom:57px;
+  left:411px;
+  cursor: pointer;
+}
+
+.sidebar3 {
+  position: fixed;
+  background: rgba(128, 128,128, 0.3);
+  padding:12px;
+  width:400px;
+  height: 200px;
+  top:50px;
+  right:50px;
+  overflow-y:scroll;
+  z-index: 2;
+}
+
+#fam4a {
+  position: fixed;
+  bottom:40px;
+  left:71px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#fam4b {
+  position: fixed;
+  bottom:52px;
+  right:626px;
+  cursor: pointer;
+  z-index: 2;
+
+}
+#fam4c {
+  position: fixed;
+  bottom:52px;
+  right:520px;
+  cursor: pointer;
+  z-index: 3;
+}
+#fam4e {
+  position: fixed;
+  bottom:46px;
+  right:310px;
+  cursor: pointer;
+}
+
+#fam4d {
+  position: fixed;
+  bottom:40px;
+  right:139px;
+  cursor: pointer;
+}
+
+.sidebar4 {
+  position: fixed;
+  background: rgba(128, 128,128, 0.3);
+  padding:12px;
+  width:400px;
+  height: 200px;
+  top:50px;
+  right:50px;
+  overflow-y:scroll;
+  z-index: 2;
+}
+
+#fam5a {
+  position: fixed;
+  bottom:42px;
+  left:99px;
+  cursor: pointer;
+}
+
+#fam5b {
+  position: fixed;
+  bottom:35px;
+  right:216px;
+  cursor: pointer;
+}
+#fam5c {
+  position: fixed;
+  bottom:30px;
+  right:550px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#fam5d {
+  position: fixed;
+  bottom:36px;
+  right:387px;
+  cursor: pointer;
+}
+
+.sidebar5 {
+  position: fixed;
+  background: rgba(128, 128,128, 0.3);
+  padding:12px;
+  width:400px;
+  height: 200px;
+  top:50px;
+  right:50px;
+  overflow-y:scroll;
+  z-index: 2;
+}
+
+#fam6a {
+  position: fixed;
+  bottom:30px;
+  right:523px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#fam6b {
+  position: fixed;
+  bottom:30px;
+  right:352px;
+  cursor: pointer;
+}
+
+.sidebar6 {
   position: fixed;
   background: rgba(128, 128,128, 0.3);
   padding:12px;
