@@ -908,7 +908,7 @@
   padding: 8px 0;
   position: absolute;
   z-index: 14;
-  bottom: 100%;
+  bottom: 97%;
   left: 50%;
   margin-left: -80px;
 }
@@ -1245,14 +1245,14 @@
   bottom:30px;
   right:443px;
   cursor: pointer;
-  z-index: 2;
+  z-index: 4;
 }
 #fam1e {
   position: fixed;
   bottom:30px;
   right:277px;
   cursor: pointer;
-  z-index: 1;
+  z-index:3;
 }
 
 #fam1d {
