@@ -1567,7 +1567,7 @@
 
 #fam6a {
   position: fixed;
-  bottom:30px;
+  bottom:40px;
   right:523px;
   cursor: pointer;
   z-index: 1;
@@ -1575,7 +1575,7 @@
 
 #fam6b {
   position: fixed;
-  bottom:30px;
+  bottom:40px;
   right:352px;
   cursor: pointer;
 }
