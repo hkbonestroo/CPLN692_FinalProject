@@ -379,6 +379,8 @@ var prevPage = function(){
 }
 
 $("#container2").click(hideTips)
+$(".pagination").click(hideTips)
+
 
 $(".door").click(hidehouse)
 
