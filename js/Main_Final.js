@@ -13,7 +13,6 @@ var Stamen_TonerLite = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{
   ext: 'png'
 }).addTo(map);
 
-
 $( ".map1" ).hide()
 $( ".map2" ).hide()
 $( ".map3" ).hide()
@@ -35,6 +34,11 @@ var hidehouse = function(){
   $(".page1").show()
   $(".page2").hide()
   $( ".pagination" ).show()
+}
+
+//make tips disappear
+var hideTips = function(){
+  $( "#container10" ).remove()
 }
 
 //page 1 elements
@@ -373,6 +377,8 @@ var prevPage = function(){
   currentPage = prevPage
   buildPage(slides[prevPage])
 }
+
+$("#container2").click(hideTips)
 
 $(".door").click(hidehouse)
 
